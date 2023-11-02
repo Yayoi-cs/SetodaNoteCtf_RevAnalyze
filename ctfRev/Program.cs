@@ -20,14 +20,14 @@ public class ctrfRev {
       (byte) 189,
       (byte) 177
     };
-        //for (int index = 0; index < numArray.Length; ++index) {
-        //    numArray[index] ^= (byte)35;
-        //    if (a(numArray[index], 119))
-        //        numArray[index] += (byte)3;
-        //    numArray[index] ^= (byte)21;
-        //    numArray[index] -= (byte)32;
-        //    numArray[index] = b(numArray[index], 39);
-        //}
+        for (int index = 0; index < numArray.Length; ++index) {
+            numArray[index] ^= (byte)35;
+            if (a(numArray[index], 119))
+                numArray[index] += (byte)3;
+            numArray[index] ^= (byte)21;
+            numArray[index] -= (byte)32;
+            numArray[index] = b(numArray[index], 39);
+        }
         //Console.WriteLine(Encoding.ASCII.GetString(numArray));
         result(numArray);
     }
